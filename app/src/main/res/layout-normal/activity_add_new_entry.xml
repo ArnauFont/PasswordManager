@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewEntry">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimaryDark"
+                android:fitsSystemWindows="true"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="Add new entry"
+                app:titleTextColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:text="Add a new username and password"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:textSize="22sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etWebSite"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Website name"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username or email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextAddNewEntry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="24sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonCreatePasswordAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:elevation="4dp"
+                        android:shadowColor="@color/colorTextDark"
+                        android:text="create password"
+                        android:textColor="@color/colorTextDark"
+                        app:backgroundTint="@color/colorPrimaryLight"
+                        app:icon="@drawable/ic_copy"
+                        app:iconTint="@color/colorTextDark" />
+
+                    <Button
+                        android:id="@+id/buttonSaveNewEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:elevation="4dp"
+                        android:shadowColor="@color/colorTextDark"
+                        android:text="save"
+                        android:textColor="@color/colorTextDark"
+                        app:backgroundTint="@color/colorPrimaryLight"
+                        app:icon="@drawable/ic_save"
+                        app:iconTint="@color/colorTextDark" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

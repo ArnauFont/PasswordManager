@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PasswordManager</string>
+    <string name="password_manager">Password Manager</string>
+    <string name="create_password">Create Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="create_your_password">Create Your Password</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password_contact_with_the_developer">Forgot Password? Contact with the developer</string>
+    <string name="usuarios_y_contrase_as">Usuarios y Contraseñas</string>
+    <string name="crear_contrase_a">Crear contraseña</string>
+    <string name="mail_developer">arnau.font.gonzalez@estudiantat.upc.edu</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+</resources>
